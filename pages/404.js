@@ -7,11 +7,10 @@ const NotFound = () => {
     const router = useRouter();
 
     useEffect(() => {
-        console.log(router, "rrrrrrr")
         setTimeout(() => {
             router.push("/")
         }, 3000)
-    }, [])
+    }, [router])
     return (
         <>
             <Head>
